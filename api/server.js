@@ -2,6 +2,7 @@ const config  = require('config');
 const http    = require('http');
 const express = require('express');
 const app     = express();
+const pgHdlr  = require('data/postgresHandler.js');
 const router  = express.Router();
 
 //Middleware
