@@ -1,5 +1,19 @@
 {
     server  : {
         port: 7000
-    }
+    },
+
+    data    : {
+        pg      : {
+            config  : {
+                user: 'testuser', //env var: PGUSER
+                database: 'salesforce', //env var: PGDATABASE
+                password: '12345', //env var: PGPASSWORD
+                host: '192.168.50.103',
+                port: 5432, //env var: PGPORT
+                max: 10, // max number of clients in the pool
+                idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
+            }
+        }
+    },
 }

@@ -2,10 +2,10 @@
     data    : {
         pg      : {
             config  : {
-                user: '', //env var: PGUSER
-                database: '', //env var: PGDATABASE
+                user: 'pddivine', //env var: PGUSER
+                database: 'todo', //env var: PGDATABASE
                 password: '', //env var: PGPASSWORD
-                host: '',
+                host: 'db-postgres-lt-1.celacqj0zmkh.us-west-2.rds.amazonaws.com',
                 port: 5432, //env var: PGPORT
                 max: 10, // max number of clients in the pool
                 idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
